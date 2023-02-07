@@ -30,15 +30,15 @@ export default function Pricing(){
                     </Center>
                     <Button size={'lg'} colorScheme={'purple'} mt='24px' w='282px'>Get Started</Button>
                 </Box>
-                <Box p={'25px'} fontSize={['13px','13px','18px']} >
-                    <Text textAlign={'left'}>
+                <Box p={'25px'} fontSize={['13px','14px','18px']} >
+                    <Text textAlign={'left'} fontWeight={['500','500','400']}>
                     Access these features when you get this pricing package for your business.
                     </Text>
-                    <Stack as='ul' spacing={'20px'} pt='20px'>
-                    <Listing as='span'>International calling and messaging API</Listing>
-                    <Listing>Additional phone numbers</Listing>
-                    <Listing>Automated messages via Zapier</Listing>
-                    <Listing>24/7 support and consulting</Listing>
+                    <Stack as='ul' spacing={'20px'} pt='20px' >
+                    <Listing fontWeight={['500','500','400']}>International calling and messaging API</Listing>
+                    <Listing fontWeight={['500','500','400']}>Additional phone numbers</Listing>
+                    <Listing fontWeight={['500','500','400']}>Automated messages via Zapier</Listing>
+                    <Listing fontWeight={['500','500','400']}>24/7 support and consulting</Listing>
                     </Stack>
                 </Box>
             </Flex>
