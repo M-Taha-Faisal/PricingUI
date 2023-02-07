@@ -5,7 +5,7 @@ export  function Listing(props:StackProps){
     const {children,...rest}=props
     return(
     <HStack as='li' spacing={5} {...rest}>
-        <Icon as={CheckIcon} w='11px' h='11px'/>
+        <Icon as={CheckIcon} w={[3,3,3]} h={[3,3,3]}/>
         <Text textAlign={['left','left','center']}>{children}</Text>
     </HStack>
     )
@@ -30,12 +30,12 @@ export default function Pricing(){
                     </Center>
                     <Button size={'lg'} colorScheme={'purple'} mt='24px' w='282px'>Get Started</Button>
                 </Box>
-                <Box p={'25px'} fontSize='18px'>
+                <Box p={'25px'} fontSize={['13px','13px','18px']} >
                     <Text textAlign={'left'}>
                     Access these features when you get this pricing package for your business.
                     </Text>
                     <Stack as='ul' spacing={'20px'} pt='20px'>
-                    <Listing>International calling and messaging API</Listing>
+                    <Listing as='span'>International calling and messaging API</Listing>
                     <Listing>Additional phone numbers</Listing>
                     <Listing>Automated messages via Zapier</Listing>
                     <Listing>24/7 support and consulting</Listing>
